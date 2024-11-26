@@ -96,18 +96,30 @@ type PokemonCard struct {
 				High   float64 `json:"high"`
 				Market float64 `json:"market"`
 			} `json:"normal,omitempty"`
-      FirstEdition *struct {
-        Low    float64 `json:"low"`
+			FirstEdition *struct {
+				Low    float64 `json:"low"`
 				Mid    float64 `json:"mid"`
 				High   float64 `json:"high"`
 				Market float64 `json:"market"`
-      } `json:"1stEdition"`
-      Unlimited *struct {
-        Low    float64 `json:"low"`
+			} `json:"1stEdition"`
+			Unlimited *struct {
+				Low    float64 `json:"low"`
 				Mid    float64 `json:"mid"`
 				High   float64 `json:"high"`
 				Market float64 `json:"market"`
-      } `json:"unlimited"`
+			} `json:"unlimited"`
+			FirstEditionHolofoil *struct {
+				Low    float64 `json:"low"`
+				Mid    float64 `json:"mid"`
+				High   float64 `json:"high"`
+				Market float64 `json:"market"`
+			} `json:"1stEditionHolofoil"`
+			UnlimitedHolofoil *struct {
+				Low    float64 `json:"low"`
+				Mid    float64 `json:"mid"`
+				High   float64 `json:"high"`
+				Market float64 `json:"market"`
+			} `json:"unlimitedHolofoil"`
 		} `json:"prices"`
 	} `json:"tcgplayer"`
 	CardMarket struct {
